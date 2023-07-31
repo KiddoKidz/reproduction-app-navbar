@@ -148,6 +148,14 @@ export default function NavBar() {
   return (
     <div id="navbar" className="navbar bg-base-200">
       <div className="">
+        <div className="dropdown">
+          <label tabIndex={0} className="btn btn-ghost lg:hidden">
+
+          </label>
+          <ul className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 z-20">
+            {generateNavBarItem(navBarItems)}
+          </ul>
+        </div>
         <Link href={"/"} className="btn btn-ghost normal-case text-xl">
           TEST
         </Link>
